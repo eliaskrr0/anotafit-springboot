@@ -17,4 +17,9 @@ public class EjercicioServicioImpl implements EjercicioServicio {
     public List<EjercicioDTO> obtenerListadoEjercicios() {
         return ejercicioRepositorio.findAll();
     }
+
+    @Override
+    public EjercicioDTO crearEjercicio(EjercicioDTO ejercicioDTO) {
+        return ejercicioRepositorio.save(ejercicioDTO);
+    }
 }

@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDate;
 
@@ -30,6 +31,7 @@ public class EjercicioDTO {
     @Column(name = "peso_adicional")
     private double pesoAdicional;
 
+    @UpdateTimestamp // Actualizala fecha de manera automática
     @Column(name = "fecha_modificacion", nullable = false)
     private LocalDate fechaModificacion;
 

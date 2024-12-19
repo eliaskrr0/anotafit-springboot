@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface EjercicioServicio {
     List<EjercicioDTO> obtenerListadoEjercicios();
+    EjercicioDTO crearEjercicio(EjercicioDTO ejercicioDTO);
 }
